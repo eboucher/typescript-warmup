@@ -1,19 +1,20 @@
 import { Pokemon } from "./pokemon";
 
-export class Attack {
-    basePower: any;
-    name: any;
-    accuracy: any;
-    constructor(name: any, basePower: any, accuracy: any) {
-        this.name = name;
-        this.basePower = basePower;
-        this.accuracy = accuracy;
-    }
 
+export class Attack {
+    name: string;
+    power: number;
+    acc: number;
+
+    constructor(name: string, power: number, acc: number) {
+        this.name = name;
+        this.power = power;
+        this.acc = acc;
+    }
 }
 
-function computeDamage(pokemonAttack: Pokemon, pokemonDefense: Pokemon, attack: Attack) {
-    return Math.floor(Math.floor(Math.floor(2 * pokemonAttack.level / 5 + 2) 
-                                * pokemonAttack.attack * attack.basePower / pokemonDefense.defense) 
+export function computeDamage(attackingPokemon: Pokemon, pokemonDefense: Pokemon, attack: Attack) {
+    return Math.floor(Math.floor(Math.floor(2 * attackingPokemon.level / 5 + 2) 
+                                * attackingPokemon.attackPower * attack.power / pokemonDefense.defense) 
                                 / 50) + 2;
 }

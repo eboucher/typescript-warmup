@@ -1,6 +1,6 @@
 import { Pokemon } from "./pokemon"
 
-export class AttackOrder {
+export class Battle {
   pokemonA: Pokemon
   pokemonB: Pokemon
 
