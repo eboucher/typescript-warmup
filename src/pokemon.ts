@@ -1,5 +1,5 @@
 
-class Pokemon {
+export class Pokemon {
     name: String
   
     constructor(name: String) {
