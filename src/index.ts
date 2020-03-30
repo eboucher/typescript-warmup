@@ -23,7 +23,7 @@ console.log('Pikachu created : ', pikachu);
 
 console.log('Which strikes first ? :', AttackOrder.firstStriker(charizard, onix).name);
 
-pikachu.attack(onix);
+pikachu.attack(onix, pikachu.attackList[1]);
 console.log('Pikachu attacks Onix');
 
-console.log(pikachu, dracaufeu);
+console.log(pikachu, onix);
