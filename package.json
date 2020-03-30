@@ -1,0 +1,19 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "A pockemon game application or something like that, written in typescript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eboucher/typescript-warmup.git"
+  },
+  "author": "Esteban Boucher",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-jest": "^25.3.0"
+  }
+}
